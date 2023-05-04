@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color-primary: #183b56;
+  --text-color-secondary: #577592;
+  --button-hover-text: #2294ed;
+  --after-hover: #1d69a3;
+  --padding-inline-section: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color-primary);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: var(--text-color-secondary);
+  line-height: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* utilities */
+
+.small-bold-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.hover-link {
+  color: var(--text-color-primary);
+}
+
+.hover-link:hover {
+  color: var(--button-hover-text);
+}
+
+.secondary-button {
+  background-color: var(--button-hover-text);
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 12px 24px;
+  color: white !important;
+  box-shadow: 0 0 2px var(--button-hover-text);
+  transition: 0.2s ease-out;
+}
+
+.secondary-button:hover {
+  background-color: var(--after-hover);
+}
+
+.primary-button {
+  border: 0.5px solid var(--text-color-primary);
+  border-radius: 6px;
+  color: var(--text-color-primary) !important;
+  font-weight: 600;
+  padding: 12px 24px;
+  transition: 0.2s ease-out;
+}
+
+.primary-button:hover {
+  color: var(--button-hover-text) !important;
+  border: 0.5px solid var(--button-hover-text);
+}
+
+/* top banner */
+
+.banner-text {
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.top-banner {
+  background-color: #e74694;
+  background-image: url(assets/asset\ 32.png);
+  background-size: 300px;
+}
+
+.main-nav {
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 180px;
+}
+
+.nav-links {
+  flex-basis: 730px;
+}
+
+.nav-links ul {
+  justify-content: end;
+  gap: 40px;
+}
+
+/* header-section */
+
+header {
+  padding: 50px var(--padding-inline-section) 0;
+}
+
+.get-started-cntnr {
+  /* justify-content: center; */
+  gap: 40px;
+}
+
+.right img {
+  width: 600px;
+}
+
+.left {
+  max-width: 70vh;
+}
+
+.left h1 {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.left p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.get-started-btn {
+  margin: 20px;
+  margin-left: 12vw;
+}
+
+/* companies sections */
+
+.companies {
+  margin-top: 15vh;
+  margin-bottom: 10px;
+}
+
+.company-header {
+  text-align: center;
+  color: var(--text-color-primary);
+  margin-block: 30px;
+}
+
+.company-logos {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 46px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+/* features-section */
+
+.features {
+  padding: 80px var(--padding-inline-section) 0;
+}
+
+.feature-heading {
+  text-align: center;
+}
+
+.feature-heading h2 {
+  margin-bottom: 25px;
+}
+
+.feature-area {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.feature-card {
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 30%;
+}
+
+/* workers */
+
+.workers {
+  padding: 75px var(--padding-inline-section) 0;
+}
+
+.workers-img img {
+  width: 100%;
+}
+
+.workers-container {
+  gap: 40px;
+}
+
+.workers-desc {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.workers-desc h5 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.workers-desc h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.para {
+  margin-bottom: 20px;
+}
+
+#name {
+  margin-bottom: 35px;
+}
+
+/* examples-swction */
+
+.examples {
+  margin-top: 45px;
+}
+
+.examples-header {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.examples-area {
+  justify-content: space-between;
+  margin-block: 50px;
+}
+
+.examples-card {
+  width: 23%;
+  position: relative;
+  min-height: 300px;
+  background-color: black;
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
+    url(assets/asset\ 36.jpeg);
+  background-size: cover;
+  transition: 0.2s ease-out;
+}
+.examples-card:hover {
+  box-shadow: 0 0 10px #363636;
+}
+
+.examples-card:nth-child(2) {
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
+    url(assets/asset\ 39.jpeg);
+  background-size: cover;
+}
+
+.examples-card:nth-child(3) {
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
+    url(assets/asset\ 37.jpeg);
+  background-size: cover;
+}
+.examples-card:nth-child(4) {
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
+    url(assets/asset\ 38.jpeg);
+  background-size: cover;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+}
+
+/* subsription */
+
+/* .left-portion{
+
+  align-items: flex-end;
+
+}
+
+.right-portion{
+  
+}
+
+.subscription{
+  flex-direction: column;
+}
+
+.plan-include{
+  
+}
+ */
+
+.cta-section-container {
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-section-container a {
+  padding: 0px 10px;
+  margin-top: 20px;
+  font-size: 1.6rem;
+}
+
+.plans {
+  background-color: var(--text-color-primary);
+  height: 30vh;
+}
+
+.link-column{
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-container{
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer{
+  padding-block: 40px;
+  background-color: #ebf2fa;
+}
+
+.sub-footer{
+  background-color: #b9cde4;
+  padding: var(--padding-inline-section);
+}
+
+.sub-footer-container{
+  justify-content: center;
+  gap: 30px;
+}
+
+.credit{
+  font-weight: 600;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
